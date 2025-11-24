@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 
 export default function Home() {
   const [messages, setMessages] = useState([
-    { role: 'assistant', content: 'Hello! I\'m your AI assistant powered by GPT-4o Mini. How can I help you today?' }
+    { role: 'assistant', content: 'Hi there! You’re chatting with Hår by Känna AI assistant. What can I do for you today?' }
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -61,8 +61,8 @@ export default function Home() {
     <div style={styles.container}>
       <div style={styles.chatContainer}>
         <div style={styles.header}>
-          <h1 style={styles.title}>AI Assistant</h1>
-          <p style={styles.subtitle}>Powered by GPT-4o Mini</p>
+          <h1 style={styles.title}>Hår by Känna AI Assistant</h1>
+          <p style={styles.subtitle}>Powered by GreenLazy</p>
         </div>
         
         <div style={styles.messagesContainer}>
@@ -200,4 +200,5 @@ const styles = {
     cursor: 'pointer',
     fontSize: '14px',
   },
+
 };
